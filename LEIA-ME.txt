@@ -52,3 +52,14 @@
 DICA: sempre confira a previa em assets\img\previa-corte.jpg depois
 do recorte. Se alguma foto sair torta, e so rodar o GERAR-FOTOS.bat
 de novo com a foto ja ajustada.
+
+6) PUBLICAR NO AR
+   O site ja esta publicado (GitHub Pages):
+       https://marcelooliveira8052668-cyber.github.io/silvia-modas/
+
+   Depois de mudar textos, precos ou fotos, de dois cliques em:
+       ferramentas\publicar.bat
+   Ele envia as mudancas e o site fica atualizado em ate 1 minuto.
+
+   O codigo fica no repositorio:
+       https://github.com/marcelooliveira8052668-cyber/silvia-modas
