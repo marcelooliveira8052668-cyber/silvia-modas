@@ -58,6 +58,8 @@
       const el = document.getElementById(id);
       if (el) { el.href = insta; el.target = '_blank'; el.rel = 'noopener'; }
     });
+    const topoInsta = document.getElementById('topoInsta');
+    if (topoInsta) topoInsta.textContent = '@' + L.instagram;
 
     const end = document.getElementById('topoEnd');
     if (end) end.textContent = L.endereco + ' — ' + L.cidade;

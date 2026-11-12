@@ -1,22 +1,20 @@
 /* ============================================================
-   SILVIA MODAS — configuração central
-   Edite só este arquivo para mudar textos, contatos e produtos.
-   (Use aspas duplas para o arquivo continuar legível pelo
-    gerador de cartões em Python.)
+   SILVIA MODAS - configuracao central
+   (aspas duplas para o gerador de cartoes em Python ler tambem)
    ============================================================ */
 
 window.SILVIA = {
   "loja": {
     "nome": "Silvia Modas",
-    "slogan": "Moda feminina com carinho",
-    "descricao": "Roupas, conjuntos, acessórios e presentes escolhidos um a um. Peça pelo WhatsApp, combine a entrega e receba em casa ou retire na loja em Taguatinga Sul.",
+    "slogan": "Estilo, conforto e carinho",
+    "descricao": "Roupas, conjuntos, vestidos e acessorios escolhidos um a um, com foco em conferir o caimento em voce. Peça pelo WhatsApp, combine a entrega e receba em casa ou retire na loja em Taguatinga Sul.",
     "whatsapp": "5511999999999",
     "whatsappLegivel": "(11) 99999-9999",
-    "instagram": "silviamodas",
-    "endereco": "QSF 13, Lote 331, Loja 01 — Taguatinga Sul",
-    "cidade": "Brasília — DF",
+    "instagram": "silviamodas_oficial",
+    "endereco": "Rua 4, nº 10/43A - Jardim Boa Vista - Orlândia",
+    "cidade": "Taguatinga Sul, Brasília — DF",
     "horario": "Segunda a sexta, 9h às 18h · Sábado, 9h às 14h",
-    "mapa": "https://www.google.com/maps/search/?api=1&query=Taguatinga+Sul+Brasilia+DF",
+    "mapa": "https://www.google.com/maps/search/?api=1&query=Jardim+Boa+Vista+Orlândia+Taguatinga+Sul+Brasilia",
     "email": "contato@silviamodas.com.br",
     "frase": "Achados, estilo e atendimento de verdade"
   },
@@ -31,39 +29,23 @@ window.SILVIA = {
   ],
 
   "produtos": [
-    { "nome": "Kit de joias douradas", "categoria": "acessorios", "preco": "", "foto": "p02.jpg", "destaque": true },
-    { "nome": "Blusa preta com gola dourada", "categoria": "roupas", "preco": "", "foto": "p04.jpg", "destaque": true },
-    { "nome": "Blusa com colar dourado", "categoria": "roupas", "preco": "", "foto": "p05.jpg" },
-    { "nome": "Calça estampa zigue-zague", "categoria": "roupas", "preco": "", "foto": "p06.jpg" },
-    { "nome": "Calça estampa geométrica", "categoria": "roupas", "preco": "", "foto": "p07.jpg" },
-    { "nome": "Vitrine de acessórios", "categoria": "acessorios", "preco": "", "foto": "p08.jpg" },
-    { "nome": "Adesivos de emoji", "categoria": "presentes", "preco": "", "foto": "p09.jpg" },
-    { "nome": "Caixas para presente", "categoria": "presentes", "preco": "", "foto": "p10.jpg" },
-    { "nome": "Colar, brinco e pulseira", "categoria": "acessorios", "preco": "", "foto": "p11.jpg", "destaque": true },
-    { "nome": "Vestido rosa plissado", "categoria": "vestidos", "preco": "", "foto": "p12.jpg", "destaque": true },
-    { "nome": "Bolsa dourada", "categoria": "acessorios", "preco": "", "foto": "p13.jpg" },
-    { "nome": "Vestidos estampados", "categoria": "vestidos", "preco": "", "foto": "p14.jpg" },
-    { "nome": "Vestido floral coral", "categoria": "vestidos", "preco": "", "foto": "p15.jpg" },
-    { "nome": "Calça texturizada preta", "categoria": "roupas", "preco": "", "foto": "p17.jpg" },
-    { "nome": "Blazer texturizado", "categoria": "conjuntos", "preco": "", "foto": "p18.jpg" },
-    { "nome": "Regata vinho com pingente", "categoria": "roupas", "preco": "", "foto": "p19.jpg" },
-    { "nome": "Blazer azul com top mesh", "categoria": "conjuntos", "preco": "", "foto": "p20.jpg", "destaque": true },
-    { "nome": "Vestido azul floral", "categoria": "vestidos", "preco": "", "foto": "p21.jpg" },
-    { "nome": "Conjunto navy estampado", "categoria": "conjuntos", "preco": "", "foto": "p22.jpg" },
-    { "nome": "Top vinho com saia branca", "categoria": "conjuntos", "preco": "", "foto": "p23.jpg" },
-    { "nome": "Blazer navy com top vinho", "categoria": "conjuntos", "preco": "", "foto": "p24.jpg" },
-    { "nome": "Conjunto preto com saia acetinada", "categoria": "conjuntos", "preco": "", "foto": "p25.jpg" },
-    { "nome": "Vestido animal print", "categoria": "vestidos", "preco": "", "foto": "p26.jpg", "destaque": true },
-    { "nome": "Manequim com chapéu e colar", "categoria": "acessorios", "preco": "", "foto": "p28.jpg" },
-    { "nome": "Look com cropped e saia", "categoria": "conjuntos", "preco": "", "foto": "p29.jpg" },
-    { "nome": "Short jeans", "categoria": "roupas", "preco": "", "foto": "p30.jpg" },
-    { "nome": "Manequim com lenço e brinco", "categoria": "acessorios", "preco": "", "foto": "p31.jpg" },
-    { "nome": "Capa e acessórios de inverno", "categoria": "roupas", "preco": "", "foto": "p32.jpg" }
+    { "nome": "Conjunto Lili — Coleção Rodeio (X/GG)", "categoria": "conjuntos", "preco": "R$ 189,90", "foto": "p05.jpg", "destaque": true },
+    { "nome": "Camisa Branca + Cropped Jeans (GG/G)", "categoria": "conjuntos", "preco": "R$ 149,90", "foto": "p07.jpg", "destaque": true },
+    { "nome": "Top Camel + Calça de Couro", "categoria": "conjuntos", "preco": "R$ 159,90", "foto": "p11.jpg", "destaque": true },
+    { "nome": "Vestido Xadrez com Laço — Coleção Rodeio", "categoria": "vestidos", "preco": "R$ 159,90", "foto": "p06.jpg" },
+    { "nome": "Colete Courino + Calça Jeans Siena (G/GG)", "categoria": "conjuntos", "preco": "R$ 139,90", "foto": "p09.jpg" },
+    { "nome": "Top Camel + Calça Jeans Siena", "categoria": "conjuntos", "preco": "R$ 149,90", "foto": "p10.jpg" },
+    { "nome": "Look da Semana", "categoria": "conjuntos", "preco": "R$ 119,90", "foto": "p04.jpg" },
+    { "nome": "Cropped Jeans", "categoria": "roupas", "preco": "R$ 119,90", "foto": "p08.jpg" },
+    { "nome": "Top Camel Manga Longa", "categoria": "roupas", "preco": "R$ 79,90", "foto": "p12.jpg" },
+    { "nome": "Top + Bermuda em Jeans", "categoria": "roupas", "preco": "R$ 89,90", "foto": "p01.jpg" },
+    { "nome": "Kit Dia dos Pais", "categoria": "presentes", "preco": "R$ 79,90", "foto": "p02.jpg" },
+    { "nome": "Kit Empreendedor", "categoria": "presentes", "preco": "R$ 99,90", "foto": "p03.jpg" }
   ],
 
   "fotos": {
-    "dona": "p01.jpg",
-    "loja": "p16.jpg",
-    "arara": "p27.jpg"
+    "dona": "dona.jpg",
+    "loja": "p01.jpg",
+    "arara": "p07.jpg"
   }
 };

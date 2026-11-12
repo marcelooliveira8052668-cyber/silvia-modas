@@ -83,7 +83,7 @@ h2.titulo em { font-style: italic; color: var(--rose); }
 }
 .cabecalho .container { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: .8rem 0; }
 .marca { display: flex; align-items: center; gap: .6rem; text-decoration: none; color: var(--tinta); }
-.marca .logo { width: 42px; height: 42px; }
+.marca .logo { width: 44px; height: 44px; border-radius: 9px; object-fit: cover; box-shadow: 0 4px 12px rgba(43, 32, 24, .18); }
 .marca strong { font-family: var(--serifada); font-size: 1.35rem; letter-spacing: .5px; }
 .marca small { display: block; font-size: .62rem; letter-spacing: .28em; text-transform: uppercase; color: var(--rose); }
 .menu { display: flex; gap: 1.4rem; align-items: center; }

@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Editar a loja | Silvia Modas</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="assets/img/logo.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/css/estilo.css">
+<style>
+  body { background: var(--areia); }
+  .guia { background: #fff; border: 1px solid var(--linha); border-radius: var(--raio); padding: 1.2rem 1.4rem; margin-bottom: 1.4rem; }
+  .guia h3 { margin: 0 0 .6rem; font-size: 1.05rem; }
+  .guia ol { margin: 0; padding-left: 1.2rem; display: grid; gap: .4rem; font-size: .95rem; color: var(--tinta-suave); }
+  .guia ol b { color: var(--tinta); }
+  .painel { display: grid; grid-template-columns: 1fr 380px; gap: 1.6rem; align-items: start; }
+  .caixa { background: #fff; border: 1px solid var(--linha); border-radius: var(--raio); padding: 1.4rem; margin-bottom: 1.4rem; }
+  .caixa h3 { margin: 0 0 1rem; font-size: 1.05rem; }
+  .campo { display: block; margin-bottom: .9rem; }
+  .campo span { display: block; font-size: .78rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--tinta-suave); margin-bottom: .3rem; }
+  .campo input, .campo textarea, .campo select { width: 100%; padding: .7rem .9rem; border: 1.5px solid var(--linha); border-radius: 10px; font: inherit; background: var(--creme); color: var(--tinta); }
+  .campo textarea { min-height: 84px; resize: vertical; }
+  .campo small { display: block; font-size: .78rem; color: var(--tinta-suave); margin-top: .25rem; }
+  .dupla { display: grid; grid-template-columns: 1fr 1fr; gap: .8rem; }
+  .pecas { display: grid; gap: .8rem; }
+  .peca { border: 1px solid var(--linha); border-radius: 12px; padding: .8rem; background: var(--creme); display: grid; gap: .6rem; }
+  .peca .topo-peca { display: flex; justify-content: space-between; align-items: center; gap: .6rem; }
+  .peca .foto-mini { width: 46px; height: 54px; object-fit: cover; border-radius: 8px; background: var(--areia); }
+  .peca .linhas { display: grid; grid-template-columns: 1fr 120px 150px; gap: .5rem; }
+  .peca input, .peca select { padding: .5rem .6rem; border: 1.5px solid var(--linha); border-radius: 8px; font: inherit; background: #fff; width: 100%; }
+  .acoes { display: flex; gap: .6rem; flex-wrap: wrap; margin-top: 1rem; }
+  .previo { background: #fff; border: 1px solid var(--linha); border-radius: var(--raio); padding: 1.2rem; position: sticky; top: 90px; }
+  .previo h3 { margin: 0 0 .9rem; font-size: 1rem; }
+  .mini-cab { border-bottom: 2px solid var(--rose); padding-bottom: .7rem; margin-bottom: .9rem; }
+  .mini-cab b { font-family: var(--serifada); font-size: 1.25rem; color: var(--rose); }
+  .mini-cab span { display: block; font-size: .82rem; color: var(--tinta-suave); }
+  .mini-card { border: 1px solid var(--linha); border-radius: 10px; padding: .6rem; margin-bottom: .6rem; font-size: .9rem; }
+  .mini-card b { display: block; }
+  .mini-card i { color: var(--tinta-suave); font-style: normal; font-size: .82rem; }
+  .status { font-size: .9rem; color: var(--verde); font-weight: 700; min-height: 1.2em; }
+  .voltar { color: var(--rose); text-decoration: none; font-weight: 700; }
+  @media (max-width: 900px) { .painel { grid-template-columns: 1fr; } .previo { position: static; } .peca .linhas { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+
+<div class="topo">
+  <div class="container">
+    <div class="itens"><span>Área de edição da loja · as mudanças ficam guardadas neste aparelho até você baixar o arquivo</span></div>
+    <div class="itens"><a class="voltar" href="index.html">← Ver o site</a></div>
+  </div>
+</div>
+
+<header class="cabecalho">
+  <div class="container">
+    <a class="marca" href="index.html">
+      <img class="logo" src="assets/img/logo.svg" alt="">
+      <span><strong>Silvia Modas</strong><small>Editar a loja</small></span>
+    </a>
+    <nav class="menu">
+      <a href="index.html">Ver o site</a>
+      <a class="btn btn-rosa" href="#salvar">Salvar</a>
+    </nav>
+  </div>
+</header>
+
+<section>
+  <div class="container">
+
+    <div class="guia">
+      <h3>Como usar esta página</h3>
+      <ol>
+        <li><b>Escreva aqui</b> o que quiser mudar: telefone, Instagram, endereço, preço das peças, nome das peças.</li>
+        <li>Clique em <b>“Baixar dados.js”</b> — o arquivo do seu computador vai ser salvo.</li>
+        <li>Envie esse arquivo <b>por WhatsApp para quem cuida do site</b> (ou coloque na pasta do site, em <b>assets/js/</b>, substituindo o antigo).</li>
+        <li>Quem cuida do site clica em <b>publicar.bat</b> e o site fica atualizado em 1 minuto.</li>
+      </ol>
+    </div>
+
+    <div class="painel">
+      <div>
+        <div class="caixa">
+          <h3>Dados da loja</h3>
+          <div class="dupla">
+            <label class="campo">
+              <span>WhatsApp (só números)</span>
+              <input type="text" id="whatsapp" placeholder="5511999999999">
+              <small>Com 55 na frente e sem espaço. Ex.: 5511988887777</small>
+            </label>
+            <label class="campo">
+              <span>WhatsApp como aparece</span>
+              <input type="text" id="whatsappLegivel" placeholder="(11) 88888-7777">
+            </label>
+          </div>
+          <div class="dupla">
+            <label class="campo">
+              <span>Instagram</span>
+              <input type="text" id="instagram" placeholder="silviamodas">
+              <small>Sem o @ e sem https</small>
+            </label>
+            <label class="campo">
+              <span>Horário</span>
+              <input type="text" id="horario" placeholder="Segunda a sexta, 9h às 18h">
+            </label>
+          </div>
+          <label class="campo">
+            <span>Endereço</span>
+            <input type="text" id="endereco" placeholder="QSF 13, Lote 331, Loja 01 — Taguatinga Sul">
+          </label>
+          <div class="dupla">
+            <label class="campo">
+              <span>Cidade</span>
+              <input type="text" id="cidade" placeholder="Brasília — DF">
+            </label>
+            <label class="campo">
+              <span>Frase curta (rodapé)</span>
+              <input type="text" id="frase" placeholder="Achados, estilo e atendimento de verdade">
+            </label>
+          </div>
+          <label class="campo">
+            <span>Texto do topo do site</span>
+            <textarea id="descricao" placeholder="Explique aqui o que a loja vende"></textarea>
+          </label>
+          <label class="campo">
+            <span>Frase do título</span>
+            <input type="text" id="slogan" placeholder="Moda feminina com carinho">
+          </label>
+        </div>
+
+        <div class="caixa">
+          <h3>Peças e preços</h3>
+          <div class="pecas" id="pecas"></div>
+          <div class="acoes">
+            <button class="btn btn-linha" id="btnAddPeca" type="button">+ Adicionar peça</button>
+          </div>
+        </div>
+
+        <div class="caixa" id="salvar">
+          <h3>Salvar</h3>
+          <div class="acoes">
+            <button class="btn btn-rosa" id="btnBaixar" type="button">Baixar dados.js</button>
+            <button class="btn btn-whats" id="btnCopiar" type="button">Copiar tudo</button>
+            <button class="btn btn-linha" id="btnRestaurar" type="button">Desfazer minhas mudanças</button>
+          </div>
+          <p class="status" id="status"></p>
+          <p style="font-size:.86rem;color:var(--tinta-suave)">
+            Dica: depois de baixar, mande o arquivo <b>dados.js</b> por WhatsApp para quem publica o site.
+          </p>
+        </div>
+      </div>
+
+      <aside class="previo">
+        <h3>Prévia</h3>
+        <div class="mini-cab">
+          <b id="pTitulo">Silvia Modas</b>
+          <span id="pCab"></span>
+        </div>
+        <div id="pPecas"></div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<script src="assets/js/dados.js"></script>
+<script src="assets/js/editor.js"></script>
+</body>
+</html>

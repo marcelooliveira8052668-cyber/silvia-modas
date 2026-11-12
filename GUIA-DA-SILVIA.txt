@@ -1,0 +1,84 @@
+================================================================
+  SILVIA MODAS - GUIA DA SILVIA
+  (para ler com calma, sem pressa)
+================================================================
+
+O SITE ESTA NO AR NESTE ENDERECO:
+
+    https://marcelooliveira8052668-cyber.github.io/silvia-modas/
+
+Para abrir pelo celular:
+  1. Abra a Camera do celular.
+  2. Aponte para o codigo QR (o arquivo "Silvia-Modas-QR-Site.png").
+  3. Toque no link que aparecer na tela. O site abre.
+
+No computador:
+  1. Copie o endereco acima e cole no navegador (Chrome, Edge).
+  2. Para o site ficar como um aplicativo na tela do celular, no
+     Android use "Adicionar à tela inicial"; no iPhone use
+     "Compartilhar > Adicionar à Tela de Início". Dai o site abre
+     como um app, com o logo da loja.
+
+
+----------------------------------------------------------------
+1. PARA MUDAR O TELEFONE, O INSTAGRAM, O ENDERECO OU OS PRECOS
+----------------------------------------------------------------
+
+  1. Abra este endereco no navegador:
+
+         https://marcelooliveira8052668-cyber.github.io/silvia-modas/editor.html
+
+  2. Preencha o que quiser mudar. Do lado direito aparece a
+     prévia de como vai ficar.
+
+  3. Clique em "Baixar dados.js". O arquivo fica guardado no
+     seu aparelho (no celular, na pasta "Downloads").
+
+  4. Mande esse arquivo por WhatsApp para quem cuida do site.
+
+  5. Quem cuida do site coloca o arquivo na pasta do site
+     (assets\js\), substituindo o antigo, e clica duas vezes em
+     publicar.bat. Em 1 minuto o site já está atualizado.
+
+  Ficou alguma coisa errada? É só abrir o editor de novo e
+  mandar o arquivo outra vez.
+
+
+----------------------------------------------------------------
+2. PARA MUDAR AS FOTOS DAS PEÇAS
+----------------------------------------------------------------
+
+  Salve as fotos novas na pasta do site, dentro de:
+
+        assets\img\produtos\
+
+  O nome do arquivo precisa ser igual ao que aparece no editor
+  (por exemplo p12.jpg). Depois é só seguir os passos do item 1
+  e clicar em publicar.bat.
+
+  Para recortar todas as fotos de uma vez (quando você tem uma
+  foto com várias peças juntas), arraste essa foto para cima do
+  arquivo ferramentas\GERAR-FOTOS.bat. Ele corta as fotos, mostra
+  uma previa do corte e refaz os cartoes de WhatsApp.
+
+
+----------------------------------------------------------------
+3. OS CARTÕES PARA MANDAR NO WHATSAPP
+----------------------------------------------------------------
+
+  - Os cartões prontos ficam na pasta "cartoes" do site.
+  - Para o cartão de uma peça nova: abra o catalogo.html,
+    escolha a foto, escreva o nome e o preço e clique em
+    "Baixar PNG".
+  - O "cartao-visita.png" é o cartão para entregar no local.
+  - O "status.png" é o cartão para o Status do WhatsApp.
+
+
+----------------------------------------------------------------
+4. ONDE A LOJA FICA
+----------------------------------------------------------------
+
+  Endereço: QSF 13, Lote 331, Loja 01 - Taguatinga Sul, Brasília/DF
+  Horário:   Segunda a sexta, 9h às 18h · Sábado, 9h às 14h
+
+  (Se mudou o endereço ou o horário, atualize no editor.)
