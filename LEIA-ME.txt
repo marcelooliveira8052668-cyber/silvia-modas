@@ -1,0 +1,54 @@
+================================================================
+  SILVIA MODAS - como usar
+================================================================
+
+1) COLOCAR AS FOTOS
+   - Salve no computador a foto do mosaico (aquela com todas as
+     pecas, uma do lado da outra).
+   - ARRASTE essa foto para cima do arquivo:
+       ferramentas\GERAR-FOTOS.bat
+     (ou salve a foto com o nome "mosaico.jpg" na pasta do site
+      e de dois cliques no GERAR-FOTOS.bat)
+
+   O programa faz tudo sozinho:
+     - corta o mosaico em 32 fotos (assets\img\produtos\)
+     - mostra a previa do corte (assets\img\previa-corte.jpg)
+     - gera os cartoes para o WhatsApp (pasta cartoes\)
+     - gera o QR code do WhatsApp
+
+2) MEXER NOS TEXTOS, PRECOS E CONTATOS
+   Abra com o Bloco de Notas:
+       assets\js\dados.js
+
+   - "whatsapp"        -> numero da loja (55 + DDD + numero, sem espaco)
+   - "whatsappLegivel" -> como o numero aparece escrito
+   - "instagram"       -> @ da loja, sem o @
+   - "preco"           -> escreva o valor, ex.: "R$ 59,90"
+                          (vazio = aparece "Sob consulta")
+   - "produtos"        -> a lista de pecas (nome, categoria, preco, foto)
+
+   Depois de mudar, rode o GERAR-FOTOS.bat de novo para os cartoes
+   acompanharem as mudancas.
+
+3) VER O SITE
+   Abra o arquivo index.html no navegador (duplo clique).
+   Para publicar na internet, envie a pasta inteira para o
+   Netlify (netlify.com) ou Vercel (vercel.com) arrastando a pasta.
+   O site e estatico: nao precisa de servidor nem banco de dados.
+
+4) CARTÕES PARA MANDAR NO WHATSAPP
+   - Os cartoes ja prontos ficam na pasta "cartoes"
+     (cartao-p01.png, cartao-p02.png ... cartao-visita.png, status.png)
+   - Para criar o cartao de uma peca nova:
+     abra catalogo.html no navegador, escolha a foto, escreva o
+     nome e o preco e clique em "Baixar PNG".
+   - "cartao-visita.png" e o cartao para entregar no local de venda
+   - "status.png" e o cartao para o Status do WhatsApp (1080x1920)
+
+5) IMPRIMIR O CATALOGO
+   No catalogo.html, clique em "Imprimir catalogo" e depois em
+   "Salvar como PDF" na janela de impressao.
+
+DICA: sempre confira a previa em assets\img\previa-corte.jpg depois
+do recorte. Se alguma foto sair torta, e so rodar o GERAR-FOTOS.bat
+de novo com a foto ja ajustada.

@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cartões de catálogo | Silvia Modas</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="assets/img/logo.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/css/estilo.css">
+<style>
+  body { background: var(--areia); }
+  .painel { display: grid; grid-template-columns: 1fr 420px; gap: 1.6rem; align-items: start; }
+  .caixa { background: #fff; border: 1px solid var(--linha); border-radius: var(--raio); padding: 1.4rem; }
+  .caixa h3 { font-family: var(--sans); font-weight: 700; margin: 0 0 1rem; font-size: 1.05rem; }
+  .campo { display: block; margin-bottom: .9rem; }
+  .campo span { display: block; font-size: .78rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--tinta-suave); margin-bottom: .3rem; }
+  .campo input, .campo select, .campo textarea {
+    width: 100%; padding: .7rem .9rem; border: 1.5px solid var(--linha); border-radius: 10px;
+    font: inherit; background: var(--creme); color: var(--tinta);
+  }
+  .campo input:focus, .campo select:focus { outline: none; border-color: var(--rose); }
+  .dupla { display: grid; grid-template-columns: 1fr 1fr; gap: .8rem; }
+  .acoes { display: flex; gap: .6rem; flex-wrap: wrap; margin-top: 1rem; }
+  .previo { text-align: center; }
+  .previo canvas { max-width: 100%; border-radius: 14px; box-shadow: var(--sombra); }
+  .lista-cartoes { display: grid; grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); gap: .8rem; }
+  .mini { position: relative; border-radius: 10px; overflow: hidden; border: 1px solid var(--linha); cursor: pointer; background: #fff; }
+  .mini img { width: 100%; display: block; }
+  .mini b { display: block; font-size: .72rem; padding: .35rem .45rem; font-weight: 700; color: var(--tinta); }
+  .mini .sp { display: block; font-size: .68rem; padding: 0 .45rem .4rem; color: var(--tinta-suave); }
+  .mini:hover { outline: 2px solid var(--rose); }
+  .aviso { font-size: .85rem; color: var(--tinta-suave); background: var(--dourado-claro); padding: .7rem .9rem; border-radius: 10px; }
+  .voltar { color: var(--rose); text-decoration: none; font-weight: 700; }
+  #imprimir { display: none; }
+  @media print {
+    body > *:not(#imprimir) { display: none !important; }
+    #imprimir { display: block; }
+    #imprimir .pg { page-break-after: always; text-align: center; }
+    #imprimir img { width: 95mm; }
+  }
+  @media (max-width: 900px) { .painel { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+
+<div class="topo">
+  <div class="container">
+    <div class="itens"><span>Ferramenta interna da Silvia Modas · os cartões ficam salvos no seu computador</span></div>
+    <div class="itens"><a class="voltar" href="index.html">← Voltar ao site</a></div>
+  </div>
+</div>
+
+<header class="cabecalho">
+  <div class="container">
+    <a class="marca" href="index.html">
+      <img class="logo" src="assets/img/logo.svg" alt="">
+      <span><strong>Silvia Modas</strong><small>Cartões de catálogo</small></span>
+    </a>
+    <nav class="menu">
+      <a href="index.html">Ver o site</a>
+      <button class="btn btn-rosa" id="btnImprimir" type="button">Imprimir catálogo</button>
+    </nav>
+  </div>
+</header>
+
+<section>
+  <div class="container">
+    <span class="rotulo">Nova peça</span>
+    <h2 class="titulo">Crie um cartão para mandar no <em>WhatsApp</em></h2>
+    <p class="subtitulo">Escolha a foto, escreva o nome e o preço, e baixe o cartão pronto para enviar. Nada sai do seu computador.</p>
+
+    <div class="painel">
+      <div>
+        <div class="caixa">
+          <h3>Dados do cartão</h3>
+          <label class="campo">
+            <span>Foto da peça</span>
+            <select id="fotoSelect"></select>
+          </label>
+          <label class="campo">
+            <span>Ou envie uma foto do computador</span>
+            <input type="file" id="fotoUpload" accept="image/jpeg,image/png,image/webp">
+          </label>
+          <label class="campo">
+            <span>Nome da peça</span>
+            <input type="text" id="pNome" placeholder="Ex.: Vestido floral coral" maxlength="60">
+          </label>
+          <div class="dupla">
+            <label class="campo">
+              <span>Categoria</span>
+              <select id="pCategoria"></select>
+            </label>
+            <label class="campo">
+              <span>Preço (vazio = sob consulta)</span>
+              <input type="text" id="pPreco" placeholder="R$ 59,90" maxlength="24">
+            </label>
+          </div>
+          <div class="acoes">
+            <button class="btn btn-rosa" id="btnGerar" type="button">Gerar cartão</button>
+            <button class="btn btn-whats" id="btnBaixar" type="button">Baixar PNG</button>
+            <button class="btn btn-linha" id="btnCopiar" type="button">Copiar para o site</button>
+          </div>
+          <p class="aviso" style="margin-top:1rem">
+            O botão <b>Copiar para o site</b> entrega a linha de texto que você cola no arquivo
+            <b>assets/js/dados.js</b> — é assim que a peça nova entra na vitrine do site.
+          </p>
+        </div>
+
+        <div class="caixa" style="margin-top:1.4rem">
+          <h3>Peças já cadastradas <span id="qtd" style="color:var(--rose)"></span></h3>
+          <div class="lista-cartoes" id="lista"></div>
+        </div>
+      </div>
+
+      <div class="caixa previo">
+        <h3>Prévia do cartão</h3>
+        <canvas id="canvas" width="1080" height="1350" style="width:100%"></canvas>
+        <p id="msg" style="font-size:.85rem;color:var(--tinta-suave)"></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div id="imprimir"></div>
+
+<script src="assets/js/dados.js"></script>
+<script src="assets/js/cartoes.js"></script>
+</body>
+</html>
