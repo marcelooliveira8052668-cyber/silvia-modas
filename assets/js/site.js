@@ -76,7 +76,7 @@
     set('rodapeDesc', L.frase + '. ' + L.endereco + ' — ' + L.cidade + '.');
     set('rodapeEnd', L.endereco + ' — ' + L.cidade);
     set('rodapeHorario', L.horario);
-    set('rodapeFeito', 'Site e catálogo feitos para a loja da família.');
+    set('rodapeFeito', 'Site e catálogo da Silvia Modas.');
     set('ano', new Date().getFullYear());
 
     const mapa = document.getElementById('btnMapa');
