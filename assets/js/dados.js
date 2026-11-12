@@ -29,19 +29,19 @@ window.SILVIA = {
   ],
 
   "produtos": [
-    { "nome": "Vestido Vermelho de Cintura", "categoria": "vestidos", "preco": "R$ 129,90", "foto": "p01.jpg", "destaque": true },
-    { "nome": "Blazer Cinza", "categoria": "conjuntos", "preco": "R$ 139,90", "foto": "p02.jpg", "destaque": true },
-    { "nome": "Look da Diquinha — Top Preto", "categoria": "conjuntos", "preco": "R$ 59,90", "foto": "p05.jpg", "destaque": true },
-    { "nome": "Conjunto Coral", "categoria": "roupas", "preco": "R$ 89,90", "foto": "p03.jpg" },
-    { "nome": "Jeans e Novidades Dobradas", "categoria": "roupas", "preco": "R$ 99,90", "foto": "p04.jpg" },
-    { "nome": "Look da Diquinha — Top e Óculos", "categoria": "roupas", "preco": "R$ 59,90", "foto": "p06.jpg" },
-    { "nome": "Look da Diquinha — Cabelo Colorido", "categoria": "roupas", "preco": "R$ 49,90", "foto": "p07.jpg" },
-    { "nome": "Look da Diquinha — Top e Bandana", "categoria": "roupas", "preco": "R$ 49,90", "foto": "p08.jpg" }
+    { "nome": "Vestido Vermelho de Cintura", "categoria": "vestidos", "preco": "R$ 129,90", "foto": "f01.jpg", "destaque": true },
+    { "nome": "Blazer Cinza", "categoria": "conjuntos", "preco": "R$ 139,90", "foto": "f02.jpg", "destaque": true },
+    { "nome": "Look da Diquinha — Top Preto", "categoria": "conjuntos", "preco": "R$ 59,90", "foto": "f05.jpg", "destaque": true },
+    { "nome": "Conjunto Coral", "categoria": "roupas", "preco": "R$ 89,90", "foto": "f03.jpg" },
+    { "nome": "Jeans e Novidades Dobradas", "categoria": "roupas", "preco": "R$ 99,90", "foto": "f04.jpg" },
+    { "nome": "Look da Diquinha — Top e Óculos", "categoria": "roupas", "preco": "R$ 59,90", "foto": "f06.jpg" },
+    { "nome": "Look da Diquinha — Cabelo Colorido", "categoria": "roupas", "preco": "R$ 49,90", "foto": "f07.jpg" },
+    { "nome": "Look da Diquinha — Top e Bandana", "categoria": "roupas", "preco": "R$ 49,90", "foto": "f08.jpg" }
   ],
 
   "fotos": {
-    "dona": "dona.jpg",
-    "loja": "p04.jpg",
-    "arara": "p02.jpg"
+    "dona": "silvia.jpg",
+    "loja": "f04.jpg",
+    "arara": "f02.jpg"
   }
 };
